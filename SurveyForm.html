@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SurveyForm.css">
+    <title>Survey</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <div id="heading">
+            <h1 id="title">Survey Form</h1>
+            <p id="description"> Thank You for taking this form</p>
+        </div>
+        <div id="total">
+            <div id="form">
+                <form id="survey-form">
+                    <div id="formname">
+                        <label for="name" id="name-label">Name:</label>
+                        <input id="name" type="text" placeholder="Enter your Name" name="name-label" required><br>
+                    </div>
+                    <div id="formmail">
+                        <label for="email" id="email-label">Email:</label>
+                        <input id="email" type="email" placeholder="Enter your Email" name="email-label" required><br>
+                    </div>
+                    <div id="formnumber">
+                        <label for="number" id="number-label">Number:</label>
+                        <input id="number" type="number" placeholder="Enter your Number" min="1" max="100"><br>
+                    </div>
+                    <div id="formdropdown">
+                        <label for="dropdown">How much experienced you:</label><br>
+                        <select id="dropdown">
+                            <option id="option1" value="o1">0year Expierence</option>
+                            <option id="option2" value="o2">1year Experience</option>
+                            <option id="option2" value="o3">2year Experience</option>
+                            <option id="option2" value="o4">3year Experience</option>
+                            <option id="option2" value="o5">more than 3years Experience</option>
+                        </select>
+                        <br>
+                    </div>
+                    <div id="radio">
+                    <label>Are you interested to taking course?</label><br>
+                    <input type="radio" name="options" value="radio1" id="yes">
+                    <label>Yes</label>
+                    <input type="radio" name="options" value="radio2" id="No">
+                    <label>No</label><br>
+                    </div>
+                    <div id="checkbox">
+                    <label>Choose Which one you learned:</label><br>
+                    <input type="checkbox" id="c1" value="checkbox1">
+                    <label>Frontend</label><br>
+                    <input type="checkbox" id="c2" value="checkbox2">
+                    <label>Backend</label><br>
+                    <input type="checkbox" id="c3" value="checkbox3">
+                    <label>Fullstack</label><br>
+                    <input type="checkbox" id="c4" value="checkbox4">
+                    <label>DataScientist</label><br>
+                    <input type="checkbox" id="c5" value="checkbox5">
+                    <label>DataAnalyst</label><br>
+                    </div>
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="textarea" rows="4" cols="50" placeholder="Comment here:"></textarea><br>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        For any Info Contact Us
+    </footer>
+</body>
+</html>
